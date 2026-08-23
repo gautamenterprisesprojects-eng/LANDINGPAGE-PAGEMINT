@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pagemint.in/sitemap.xml
+
+Disallow: /portal/
+Disallow: /studio/
+Disallow: /api/
