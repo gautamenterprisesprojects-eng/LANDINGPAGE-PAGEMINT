@@ -59,27 +59,6 @@ export default {
       bf: "Custom Brand Fonts"
     }
   },
-  autonews: {
-    badge: "Automated Publishing Engine",
-    headline_1: "An Entire Newspaper.",
-    headline_2: "Minted Automatically.",
-    tagline: "PageMint evaluates every news article, photograph, and ad reservation to generate cohesive, balanced newspaper pages in seconds.",
-    metrics: {
-      m1_title: "Multi-Candidate Scoring",
-      m1_desc: "Every page calculates fill scores, hierarchy balance, and whitespace ratios across candidate layouts.",
-      m1_label: "Average Fill Score",
-      m2_title: "Ad-Constraint First",
-      m2_desc: "Booked advertisement slots are treated as hard constraints. Content flows cleanly around them.",
-      m2_label: "Ad Compliance",
-      m3_title: "Continuous Story Splitting",
-      m3_desc: "Articles split at clean sentence boundaries with automatic jumps to designated continuation pages.",
-      m3_label: "Widow/Orphan Lines",
-      m4_title: "Instant Multi-Output",
-      m4_desc: "Generates print 300 DPI CMYK PDF and interactive digital ePaper web apps in parallel.",
-      m4_label: "Generation Time"
-    },
-    cta: "Explore Auto Layout Features"
-  },
   templates: {
     badge: "Template Diversity",
     headline: "Broadsheets, Tabloids & Digital Editions.",
@@ -107,21 +86,6 @@ export default {
     },
     cta: "Try Studio Layout Tools"
   },
-  digital: {
-    badge: "Digital Editions & ePaper",
-    headline_1: "Every Issue.",
-    headline_2: "Every Screen.",
-    tagline: "Transform your daily or weekly publication into responsive, interactive digital editions. Readers can flip full-page spreads or read individual articles in mobile-first views.",
-    features: {
-      f1: "Interactive Desktop Spread",
-      f2: "Mobile Article Reader",
-      f3: "Full-Text Edition Search",
-      f4: "Saved Articles & Audio",
-      f5: "Social & WhatsApp Sharing",
-      f6: "Offline PDF Downloads"
-    },
-    cta: "Explore Digital Editions"
-  },
   analytics: {
     badge: "Live Readership Intelligence",
     headline: "Insights into Every Page & Article Read.",
@@ -137,20 +101,6 @@ export default {
       m4_label: "Subscriber Retention"
     },
     cta: "Explore Analytics Features"
-  },
-  portal: {
-    badge: "Publisher Operations",
-    headline: "One Unified Workspace for Your Newsroom.",
-    tagline: "Manage multi-edition publication schedules, incoming wire stories, ad bookings, and print approvals from an enterprise-grade web portal.",
-    modules: {
-      mod1: "Publications Hub",
-      mod2: "Edition Manager",
-      mod3: "Content Ingestion",
-      mod4: "Ad Placements",
-      mod5: "Team & Roles",
-      mod6: "Preflight Audits"
-    },
-    cta: "Open Publisher Portal Overview"
   },
   workflow: {
     badge: "How It Works",
@@ -254,56 +204,6 @@ export default {
     cta_primary: "Contact us & Request Demo",
     cta_secondary: "Explore Auto Layout",
     footer_text: "PageMint — A Unit of Gautam Enterprises"
-  },
-  footer: {
-    trust: {
-      c1: "GeM Portal Compliant",
-      c2: "IREPS Registered",
-      c3: "MSME Verified",
-      link: "Visit Main Corporate Site"
-    },
-    brand: {
-      tagline: "The intelligent newspaper publishing and digital editions SaaS platform for modern newsrooms."
-    },
-    cols: {
-      c1_title: "Publishing Solutions",
-      c1_l1: "Auto Newspaper Layout (DTP)",
-      c1_l2: "ePaper Digital Editions",
-      c1_l3: "Print PDF 150-2400 DPI",
-      c1_l4: "Smart Flatplans & Grids",
-      c1_l5: "Cross-Platform Reader Suite",
-      c1_l6: "Publisher Portal",
-      
-      c2_title: "Target Publishers",
-      c2_l1: "Daily Broadsheets",
-      c2_l2: "Magazines & Periodicals",
-      c2_l3: "Regional & Multilingual (Hindi)",
-      c2_l4: "Enterprise Media Houses",
-      c2_l5: "Government Publications",
-      c2_l6: "RNI-Ready Workflows",
-      
-      c3_title: "Gautam Enterprises",
-      c3_l1: "Main Firm Portal",
-      c3_l2: "AI Web Engineering Wing",
-      c3_l3: "GenAI & Automation Desk",
-      c3_l4: "Design Lab & UI/UX",
-      c3_l5: "Industrial OEM Supply Chain",
-      c3_l6: "Govt. GeM & IREPS Desk",
-      
-      c4_title: "Company & Trust",
-      c4_l1: "About PageMint",
-      c4_l2: "Platform Architecture",
-      c4_l3: "Request a Demo (₹10,000 Package)",
-      c4_l4: "Contact Us",
-      c4_l5: "Compliance & Verification",
-      c4_l6: "Privacy & RNI Policy"
-    },
-    bottom: {
-      copyright: "PageMint. A Unit of Gautam Enterprises. All rights reserved.",
-      l1: "About Us",
-      l2: "Contact",
-      l3: "Gautam Enterprises Portal"
-    }
   },
   magazines: {
     badge: "Magazines & Periodicals",
