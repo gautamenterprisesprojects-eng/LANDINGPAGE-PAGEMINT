@@ -354,6 +354,25 @@ export default {
     cta_title: "Ready to see the full platform?"
   },
   autonews: {
+    badge: "Automated Publishing Engine",
+    headline_1: "An Entire Newspaper.",
+    headline_2: "Minted Automatically.",
+    tagline: "PageMint evaluates every news article, photograph, and ad reservation to generate cohesive, balanced newspaper pages in seconds.",
+    metrics: {
+      m1_title: "Multi-Candidate Scoring",
+      m1_desc: "Every page calculates fill scores, hierarchy balance, and whitespace ratios across candidate layouts.",
+      m1_label: "Average Fill Score",
+      m2_title: "Ad-Constraint First",
+      m2_desc: "Booked advertisement slots are treated as hard constraints. Content flows cleanly around them.",
+      m2_label: "Ad Compliance",
+      m3_title: "Continuous Story Splitting",
+      m3_desc: "Articles split at clean sentence boundaries with automatic jumps to designated continuation pages.",
+      m3_label: "Widow/Orphan Lines",
+      m4_title: "Instant Multi-Output",
+      m4_desc: "Generates print PDF and interactive digital ePaper web apps in parallel.",
+      m4_label: "Generation Time"
+    },
+    cta: "Explore Auto Layout Features",
     s1_title: "Publication Setup",
     s1_desc: "Choose publication, city edition, target language, and date.",
     s2_title: "Page Geometry Plan",
@@ -423,6 +442,16 @@ export default {
   },
   portal: {
     badge: "Publisher Portal",
+    headline: "One Unified Workspace for Your Newsroom.",
+    modules: {
+      mod1: "Publications Hub",
+      mod2: "Edition Manager",
+      mod3: "Content Ingestion",
+      mod4: "Ad Placements",
+      mod5: "Team & Roles",
+      mod6: "Preflight Audits"
+    },
+    cta: "Open Publisher Portal Overview",
     headline_1: "Everything your publishing team needs, ",
     headline_2: "in one place.",
     tagline: "From content import to final publication approval — the PageMint Publisher Portal gives every member of your team the right tools, at the right level of access.",

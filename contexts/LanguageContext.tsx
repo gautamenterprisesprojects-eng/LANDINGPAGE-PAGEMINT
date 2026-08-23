@@ -51,10 +51,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     // Fallback to English if Hindi translation is missing
     if (!translation && lang === 'HI') {
         const fallback = enFallback?.[namespace] ? getNestedValue(enFallback[namespace], key) : undefined
-        return fallback || `${namespace}.${key}`
+        return fallback || ''
     }
     
-    return translation || `${namespace}.${key}`
+    return translation || ''
   }
 
   return (

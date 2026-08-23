@@ -60,6 +60,7 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false)
   const { lang, toggleLanguage, t } = useLanguage()
   const { theme } = useTheme()
+  const languageLabel = lang === 'EN' ? 'ENG' : 'HI'
   const [mounted, setMounted] = useState(false)
   const [currentDate, setCurrentDate] = useState('')
 
@@ -83,8 +84,7 @@ export default function Navigation() {
           <div className="flex items-center gap-4 flex-wrap">
             <span className="inline-flex items-center gap-1.5 text-sky-400 font-semibold">
               <ShieldCheck size={13} className="text-sky-400" />
-              <span className="hidden sm:inline">{t('nav', 'unit_of')}</span>
-              <span className="sm:hidden">Gautam Enterprises</span>
+              <span>Gautam Enterprises</span>
             </span>
             <span className="hidden md:inline text-slate-500">|</span>
             <span className="hidden md:inline-flex items-center gap-1 text-slate-300">
@@ -108,7 +108,7 @@ export default function Navigation() {
             )}
             <button onClick={toggleLanguage} className="flex items-center gap-1.5 hover:text-white transition-colors" title="Select Language">
               <Globe size={13} />
-              <span className="hidden sm:inline">{lang}</span>
+              <span className="text-[11px] font-bold tracking-wide">{languageLabel}</span>
             </button>
             <span className="hidden sm:inline text-slate-600 dark:text-slate-400">|</span>
             <a
