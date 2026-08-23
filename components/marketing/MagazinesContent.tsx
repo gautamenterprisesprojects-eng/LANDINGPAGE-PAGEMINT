@@ -7,12 +7,12 @@ export default function MagazinesContent() {
   const { t } = useLanguage()
   
   const FEATURES = [
-    { title: t('magazines', 'features.f1_title'), desc: t('magazines', 'features.f1_desc') },
-    { title: t('magazines', 'features.f2_title'), desc: t('magazines', 'features.f2_desc') },
-    { title: t('magazines', 'features.f3_title'), desc: t('magazines', 'features.f3_desc') },
-    { title: t('magazines', 'features.f4_title'), desc: t('magazines', 'features.f4_desc') },
-    { title: t('magazines', 'features.f5_title'), desc: t('magazines', 'features.f5_desc') },
-    { title: t('magazines', 'features.f6_title'), desc: t('magazines', 'features.f6_desc') },
+    { title: t('magazines', 'f1_title'), desc: t('magazines', 'f1_desc') },
+    { title: t('magazines', 'f2_title'), desc: t('magazines', 'f2_desc') },
+    { title: t('magazines', 'f3_title'), desc: t('magazines', 'f3_desc') },
+    { title: t('magazines', 'f4_title'), desc: t('magazines', 'f4_desc') },
+    { title: t('magazines', 'f5_title'), desc: t('magazines', 'f5_desc') },
+    { title: t('magazines', 'f6_title'), desc: t('magazines', 'f6_desc') },
   ]
 
   return (
@@ -20,7 +20,9 @@ export default function MagazinesContent() {
       <section className="pt-28 pb-16 lg:pt-36 surface-editorial dark:bg-slate-950">
         <div className="container-max max-w-3xl">
           <div className="badge mb-6 dark:text-slate-200">{t('magazines', 'badge')}</div>
-          <h1 className="hero-headline mb-6 dark:text-white">{t('magazines', 'headline')}</h1>
+          <h1 className="hero-headline mb-6 dark:text-white">
+            {t('magazines', 'headline_1')} <span className="text-sky-600">{t('magazines', 'headline_2')}</span>
+          </h1>
           <p className="body-large mb-8 dark:text-slate-400">
             {t('magazines', 'tagline')}
           </p>

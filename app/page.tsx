@@ -26,6 +26,7 @@ export default function HomePage() {
       <Navigation />
       <main>
         <HeroSection />
+        <WorkflowSection />
         <TrustSection />
         <AutoNewspaperSection />
         <TemplatesShowcaseSection />
@@ -33,7 +34,6 @@ export default function HomePage() {
         <DigitalEditionsSection />
         <AnalyticsSection />
         <PortalSection />
-        <WorkflowSection />
         <FeaturesSection />
         <EnterpriseSection />
         <CtaSection />

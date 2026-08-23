@@ -233,6 +233,7 @@ export default {
     n8: "TOC (Table of Contents) generation",
     n9: "Interactive rich-media digital editions",
     n10: "Version control and proofing",
+    cta: "Request Magazine Demo",
     cta_title: "See it for your magazine.",
   },
   newspapers: {
@@ -403,7 +404,18 @@ export default {
   digital: {
     badge: "Cross-Platform eEditions",
     headline: "Turn Every Print Issue Into an Interactive Digital Experience.",
+    headline_1: "Print editions become digital.",
+    headline_2: "Ready for every reader.",
     tagline: "Every print edition published through PageMint is automatically converted into high-fidelity digital replicas and mobile reading applications — complete with search, offline caching, and bookmarks.",
+    features: {
+      f1: "Desktop replica editions",
+      f2: "Mobile reading apps",
+      f3: "Full-text search",
+      f4: "Article bookmarks",
+      f5: "WhatsApp and social sharing",
+      f6: "Offline PDF downloads"
+    },
+    cta: "Explore Digital Editions",
     explore: "Explore ePaper",
     reader_label: "Interactive Reader",
     reader_title: "Desktop 2-Page Spreads with Mobile Article Popouts.",
