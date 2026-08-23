@@ -36,7 +36,7 @@ export default function WorkflowSection() {
     <section className="section-padding bg-white dark:bg-slate-950">
       <div className="container-max">
         <div className="max-w-xl mb-14">
-          <p className="section-label mb-4">{t('workflow', 'badge')}</p>
+          <p className="workflow-badge mb-4">{t('workflow', 'badge')}</p>
           <h2 className="section-headline">
             {t('workflow', 'headline')}
           </h2>

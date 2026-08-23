@@ -26,10 +26,10 @@ export default function HomePage() {
       <Navigation />
       <main>
         <HeroSection />
+        <TrustSection />
         <div className="lg:hidden">
           <WorkflowSection />
         </div>
-        <TrustSection />
         <AutoNewspaperSection />
         <TemplatesShowcaseSection />
         <StudioSection />
