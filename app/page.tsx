@@ -26,7 +26,9 @@ export default function HomePage() {
       <Navigation />
       <main>
         <HeroSection />
-        <WorkflowSection />
+        <div className="lg:hidden">
+          <WorkflowSection />
+        </div>
         <TrustSection />
         <AutoNewspaperSection />
         <TemplatesShowcaseSection />
@@ -34,6 +36,9 @@ export default function HomePage() {
         <DigitalEditionsSection />
         <AnalyticsSection />
         <PortalSection />
+        <div className="hidden lg:block">
+          <WorkflowSection />
+        </div>
         <FeaturesSection />
         <EnterpriseSection />
         <CtaSection />

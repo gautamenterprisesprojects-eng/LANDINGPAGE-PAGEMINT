@@ -139,7 +139,6 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem={false}
           storageKey="pagemint-theme"
-          forcedTheme="light"
           disableTransitionOnChange
         >
           <LanguageProvider>

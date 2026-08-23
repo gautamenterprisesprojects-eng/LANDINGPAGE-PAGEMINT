@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ChevronDown, ArrowRight, ShieldCheck, Building2, ExternalLink, Globe } from 'lucide-react'
+import { Menu, X, ChevronDown, ArrowRight, ShieldCheck, Building2, ExternalLink, Globe, Moon, Sun } from 'lucide-react'
 
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -59,8 +59,9 @@ export default function Navigation() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
   const [scrolled, setScrolled] = useState(false)
   const { lang, toggleLanguage, t } = useLanguage()
-  const { theme } = useTheme()
+  const { theme, setTheme } = useTheme()
   const languageLabel = lang === 'EN' ? 'ENG' : 'HI'
+  const isDark = theme === 'dark'
   const [mounted, setMounted] = useState(false)
   const [currentDate, setCurrentDate] = useState('')
 
@@ -109,6 +110,15 @@ export default function Navigation() {
             <button onClick={toggleLanguage} className="flex items-center gap-1.5 hover:text-white transition-colors" title="Select Language">
               <Globe size={13} />
               <span className="text-[11px] font-bold tracking-wide">{languageLabel}</span>
+            </button>
+            <span className="hidden sm:inline text-slate-600 dark:text-slate-400">|</span>
+            <button
+              onClick={() => setTheme(isDark ? 'light' : 'dark')}
+              className="flex items-center gap-1.5 hover:text-white transition-colors"
+              title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {mounted && isDark ? <Sun size={13} /> : <Moon size={13} />}
             </button>
             <span className="hidden sm:inline text-slate-600 dark:text-slate-400">|</span>
             <a
