@@ -94,18 +94,6 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${lora.variable} overflow-x-hidden`} suppressHydrationWarning>
       <head>
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                localStorage.removeItem('theme');
-                localStorage.setItem('pagemint-theme', 'light');
-                document.documentElement.classList.remove('dark');
-                document.documentElement.style.colorScheme = 'light';
-              } catch (_) {}
-            `,
-          }}
-        />
-        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -151,6 +139,7 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem={false}
           storageKey="pagemint-theme"
+          forcedTheme="light"
           disableTransitionOnChange
         >
           <LanguageProvider>

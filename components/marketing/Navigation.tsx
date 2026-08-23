@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ChevronDown, ArrowRight, ShieldCheck, Building2, ExternalLink, Globe, Moon, Sun } from 'lucide-react'
+import { Menu, X, ChevronDown, ArrowRight, ShieldCheck, Building2, ExternalLink, Globe } from 'lucide-react'
 
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -59,7 +59,7 @@ export default function Navigation() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
   const [scrolled, setScrolled] = useState(false)
   const { lang, toggleLanguage, t } = useLanguage()
-  const { theme, setTheme } = useTheme()
+  const { theme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [currentDate, setCurrentDate] = useState('')
 
@@ -110,16 +110,6 @@ export default function Navigation() {
               <Globe size={13} />
               <span className="hidden sm:inline">{lang}</span>
             </button>
-            <span className="text-slate-600 dark:text-slate-400">|</span>
-            {mounted && (
-              <button 
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} 
-                className="flex items-center hover:text-white transition-colors"
-                title="Toggle Theme"
-              >
-                {theme === 'dark' ? <Sun size={13} /> : <Moon size={13} />}
-              </button>
-            )}
             <span className="hidden sm:inline text-slate-600 dark:text-slate-400">|</span>
             <a
               href="https://www.gautamenterprises.org/"
