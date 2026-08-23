@@ -17,7 +17,7 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://pagemint.in'),
+  metadataBase: new URL('https://www.pagemint.gautamenterprises.org'),
   title: {
     default: 'PageMint — The Intelligent Newspaper Publishing Platform',
     template: '%s | PageMint',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://pagemint.in',
+    url: 'https://www.pagemint.gautamenterprises.org',
     siteName: 'PageMint',
     title: 'PageMint — The Intelligent Newspaper Publishing Platform',
     description:
@@ -71,10 +71,15 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
   },
+  manifest: '/site.webmanifest',
 }
 
 import { ThemeProvider } from '@/components/ThemeProvider'
@@ -96,10 +101,10 @@ export default function RootLayout({
               '@graph': [
                 {
                   '@type': 'Organization',
-                  '@id': 'https://pagemint.in/#organization',
+                  '@id': 'https://www.pagemint.gautamenterprises.org/#organization',
                   name: 'PageMint',
                   alternateName: 'PageMint — A Unit of Gautam Enterprises',
-                  url: 'https://pagemint.in',
+                  url: 'https://www.pagemint.gautamenterprises.org',
                   description:
                     'PageMint is a professional publishing-technology SaaS platform for newspapers, magazines, media houses, publishers and digital-first news organisations.',
                   sameAs: [
@@ -109,7 +114,7 @@ export default function RootLayout({
                 },
                 {
                   '@type': 'SoftwareApplication',
-                  '@id': 'https://pagemint.in/#software',
+                  '@id': 'https://www.pagemint.gautamenterprises.org/#software',
                   name: 'PageMint',
                   applicationCategory: 'BusinessApplication',
                   operatingSystem: 'Web',
@@ -117,10 +122,10 @@ export default function RootLayout({
                     'Intelligent newspaper publishing platform for print and digital editions.',
                   offers: {
                     '@type': 'Offer',
-                    url: 'https://pagemint.in/request-demo',
+                    url: 'https://www.pagemint.gautamenterprises.org/request-demo',
                   },
                   publisher: {
-                    '@id': 'https://pagemint.in/#organization',
+                    '@id': 'https://www.pagemint.gautamenterprises.org/#organization',
                   },
                 },
               ],
@@ -131,8 +136,9 @@ export default function RootLayout({
       <body className="font-sans antialiased text-slate-900 bg-white dark:bg-slate-950 dark:text-slate-50 transition-colors overflow-x-hidden" suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
+          storageKey="pagemint-theme"
           disableTransitionOnChange
         >
           <LanguageProvider>

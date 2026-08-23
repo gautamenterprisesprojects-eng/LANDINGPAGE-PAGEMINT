@@ -43,7 +43,7 @@ export default {
     bullet_1: "Multi-candidate scoring & ad position locking",
     bullet_2: "Export 150-2400 DPI PDF with CMYK preflight",
     bullet_3: "Full Unicode Devanagari & Hindi fonts support",
-    book_package: "Book Launch Package",
+    book_package: "Book Consultation",
     how_it_works: "How it works"
   },
   trust: {
@@ -153,8 +153,8 @@ export default {
       i10_title: "Smart Media Asset Hub",
       i10_desc: "Automated DPI quality checks, focal point cropping, photo caption styling, and rights metadata directly from approved content pools.",
       i10_badge: "Assets",
-      i11_title: "Turnkey Launch Package",
-      i11_desc: "Get started for ₹10,000 for 1 month with publication setup, comprehensive training, WhatsApp support, and 50 included pages.",
+      i11_title: "Publisher Onboarding",
+      i11_desc: "Get expert publication setup, workflow training, WhatsApp support, and guided launch assistance.",
       i11_badge: "Onboarding",
       i12_title: "Readership Analytics",
       i12_desc: "Measure page dwell times, top performing stories, regional readership, and digital subscriber conversion across your network.",
@@ -268,7 +268,7 @@ export default {
   requestDemo: {
     badge: "Direct Consultation Desk",
     headline: "Launch Your Publication with PageMint.",
-    tagline: "Connect directly with our publishing systems team to explore our turn-key automation platform. We offer a comprehensive <strong>₹10,000 Launch Package</strong> that includes complete onboarding, custom template creation, and 50 included pages for your first month.",
+    tagline: "Connect directly with our publishing systems team to explore PageMint automation, implementation planning, and production workflows for your publication.",
     corp: "Corporate Desk — Gautam Enterprises",
     address: "Bhopal, Madhya Pradesh, India (GeM Portal & IREPS Verified)",
     req: {
@@ -286,7 +286,7 @@ export default {
       i2: "Interactive ePaper replica & mobile article reading views",
       i3: "Full Unicode Devanagari support for regional publications",
       i4: "Variable Print PDF export (150 DPI proofing up to 2400 DPI press)",
-      i5: "₹10,000 Pilot Package: Includes setup, training, and 50 pages"
+      i5: "Implementation planning, training, and launch support"
     },
     form: {
       title: "Schedule a Consultation",
@@ -506,7 +506,7 @@ export default {
     cert_4_label: "GSTIN Verified",
     cert_4_desc: "23BFJPT7384H1ZX (Active Tax Entity)",
     gautam_portal: "Gautam Enterprises Portal",
-    setup_package: "Explore ₹10,000 Setup Package",
+    setup_package: "Explore setup options",
     div_1_title: "Digital & AI Wing",
     div_1_desc: "Full-stack AI web engineering, LLM automation, custom software architectures, and MLOps infrastructure.",
     div_1_badge: "AI Services",

@@ -47,7 +47,7 @@ export default function Footer() {
         { label: t('footer', 'cols.c4_l1'), href: '/about' },
         { label: t('footer', 'cols.c4_l2'), href: '/platform' },
         { label: t('footer', 'cols.c4_l3'), href: '/request-demo' },
-        { label: t('footer', 'cols.c4_l4'), href: '/contact' },
+        { label: t('footer', 'cols.c4_l4'), href: 'https://www.gautamenterprises.org/contact', external: true },
         { label: t('footer', 'cols.c4_l5'), href: '/about#compliance' },
         { label: t('footer', 'cols.c4_l6'), href: 'https://www.gautamenterprises.org/company-desk/policies', external: true },
       ],
@@ -164,7 +164,7 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} {t('footer', 'bottom.copyright')}</p>
           <div className="flex items-center gap-6">
             <Link href="/about" className="hover:text-slate-300 transition-colors">{t('footer', 'bottom.l1')}</Link>
-            <Link href="/request-demo" className="hover:text-slate-300 transition-colors">{t('footer', 'bottom.l2')}</Link>
+            <a href="https://www.gautamenterprises.org/contact" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">{t('footer', 'bottom.l2')}</a>
             <a href="https://www.gautamenterprises.org/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">
               {t('footer', 'bottom.l3')}
             </a>

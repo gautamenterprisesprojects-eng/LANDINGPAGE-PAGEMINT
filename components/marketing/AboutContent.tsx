@@ -160,7 +160,7 @@ export default function AboutContent() {
                   {t('about', 'gautam_portal') || 'Gautam Enterprises Portal'} <ExternalLink size={14} />
                 </a>
                 <Link href="/request-demo" className="btn-secondary inline-flex text-sm py-2">
-                  {t('about', 'setup_package') || 'Explore ₹10,000 Setup Package'}
+                  {t('about', 'setup_package') || 'Explore setup options'}
                 </Link>
               </div>
             </div>

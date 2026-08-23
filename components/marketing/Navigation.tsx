@@ -47,10 +47,12 @@ const NAV_ITEMS_KEYS = [
       { labelKey: 'menu.publishing_guides', href: '/resources' },
       { labelKey: 'menu.platform_architecture', href: '/platform' },
       { labelKey: 'menu.gautam_parent', href: 'https://www.gautamenterprises.org/' },
-      { labelKey: 'menu.contact_support', href: '/contact' },
+      { labelKey: 'menu.contact_support', href: 'https://www.gautamenterprises.org/contact' },
     ],
   },
 ]
+
+const CONTACT_URL = 'https://www.gautamenterprises.org/contact'
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -237,7 +239,7 @@ export default function Navigation() {
                 {t('nav', 'publisher_portal')}
               </Link>
               <Link
-                href="/request-demo"
+                href={CONTACT_URL}
                 className="text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-sky-600 dark:hover:text-sky-400 px-3 py-2 rounded-lg transition-colors"
               >
                 {t('nav', 'contact_us')}
@@ -280,7 +282,7 @@ export default function Navigation() {
                 {t('nav', 'publisher_portal')}
               </Link>
               <Link
-                href="/request-demo"
+                href={CONTACT_URL}
                 onClick={() => setMobileOpen(false)}
                 className="btn-coral w-full justify-center text-center"
               >
