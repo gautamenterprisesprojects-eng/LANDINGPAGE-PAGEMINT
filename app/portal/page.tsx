@@ -4,6 +4,7 @@ import {
   LayoutDashboard, Newspaper, BookOpen, FileText, LayoutGrid,
   Image as ImageIcon, Megaphone, BarChart3, Users, Settings, Layers, LogOut
 } from 'lucide-react'
+import { PAGEMINT_APP_URL } from '@/lib/links'
 
 export const metadata: Metadata = {
   title: 'Publisher Portal — PageMint',
@@ -15,7 +16,7 @@ const NAV_ITEMS = [
   { icon: Newspaper, label: 'Publications', href: '/portal/publications' },
   { icon: BookOpen, label: 'Editions', href: '/portal/editions' },
   { icon: FileText, label: 'Content', href: '/portal/content' },
-  { icon: Layers, label: 'Auto Newspaper', href: '/portal/generate' },
+  { icon: Layers, label: 'Auto Newspaper', href: PAGEMINT_APP_URL },
   { icon: LayoutGrid, label: 'Flatplan', href: '/portal/flatplan' },
   { icon: LayoutGrid, label: 'Templates', href: '/portal/templates' },
   { icon: ImageIcon, label: 'Media Library', href: '/portal/media' },
@@ -102,7 +103,7 @@ export default function PortalDashboard() {
           </div>
           <div className="flex items-center gap-3">
             <Link
-              href="/portal/generate"
+              href={PAGEMINT_APP_URL}
               className="btn-primary text-sm py-2 px-4"
             >
               + New Edition

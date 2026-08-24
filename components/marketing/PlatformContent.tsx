@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { motion } from 'framer-motion'
+import { PAGEMINT_APP_URL } from '@/lib/links'
 
 export default function PlatformContent() {
   const { t } = useLanguage()
@@ -47,7 +48,7 @@ export default function PlatformContent() {
     {
       name: t('platform', 'm7_title') || 'Publishing Portal',
       desc: t('platform', 'm7_desc') || 'Enterprise publishing workspace for the full team — editors, designers, reporters, ad managers, and reviewers.',
-      href: '/publisher-portal',
+      href: PAGEMINT_APP_URL,
       color: '#334155', // slate-700
     },
     {

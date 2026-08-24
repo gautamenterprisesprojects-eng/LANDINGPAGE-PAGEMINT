@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ArrowRight, Cpu } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { PAGEMINT_APP_URL } from '@/lib/links'
 
 export default function AutoNewspaperHero() {
   const { t } = useLanguage()
@@ -35,7 +36,7 @@ export default function AutoNewspaperHero() {
               <Link href="/request-demo" className="btn-coral">
                 Contact us &amp; Request Demo <ArrowRight size={16} />
               </Link>
-              <Link href="/portal" className="btn-secondary">
+              <Link href={PAGEMINT_APP_URL} className="btn-secondary">
                 Access Portal
               </Link>
             </div>

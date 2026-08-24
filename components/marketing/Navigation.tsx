@@ -7,6 +7,7 @@ import { Menu, X, ChevronDown, ArrowRight, ShieldCheck, Building2, ExternalLink,
 
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { PAGEMINT_APP_URL } from '@/lib/links'
 
 // We will map the nav items inside the component or just translate the labels inline.
 const NAV_ITEMS_KEYS = [
@@ -31,7 +32,7 @@ const NAV_ITEMS_KEYS = [
           { labelKey: 'menu.auto_layout_engine', href: '/auto-newspaper', descKey: 'menu.auto_layout_desc' },
           { labelKey: 'menu.epaper_editions', href: '/epaper', descKey: 'menu.epaper_desc' },
           { labelKey: 'menu.print_pdf', href: '/platform', descKey: 'menu.print_pdf_desc' },
-          { labelKey: 'menu.portal', href: '/publisher-portal', descKey: 'menu.portal_desc' },
+          { labelKey: 'menu.portal', href: PAGEMINT_APP_URL, descKey: 'menu.portal_desc' },
         ],
       },
     ],
@@ -233,7 +234,7 @@ export default function Navigation() {
             {/* Desktop Action Buttons — PageSuite style red/coral button */}
             <div className="hidden lg:flex items-center gap-3">
               <Link
-                href="/publisher-portal"
+                href={PAGEMINT_APP_URL}
                 className="text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-sky-600 dark:hover:text-sky-400 px-3 py-2 rounded-lg transition-colors"
               >
                 {t('nav', 'publisher_portal')}
@@ -275,7 +276,7 @@ export default function Navigation() {
             ))}
             <div className="pt-6 border-t border-slate-100 space-y-3">
               <Link
-                href="/portal"
+                href={PAGEMINT_APP_URL}
                 onClick={() => setMobileOpen(false)}
                 className="block w-full text-center py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-sm font-bold text-slate-800 dark:text-slate-200"
               >

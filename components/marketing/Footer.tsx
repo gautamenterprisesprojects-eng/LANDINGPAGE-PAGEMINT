@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, ExternalLink, ShieldCheck, Building2, MapPin, Mail, Phone } from 'lucide-react'
 
 import { useLanguage } from '@/contexts/LanguageContext'
+import { PAGEMINT_APP_URL } from '@/lib/links'
 
 export default function Footer() {
   const { t } = useLanguage()
@@ -16,7 +17,7 @@ export default function Footer() {
         { label: t('footer', 'cols.c1_l3'), href: '/platform' },
         { label: t('footer', 'cols.c1_l4'), href: '/platform' },
         { label: t('footer', 'cols.c1_l5'), href: '/digital-editions' },
-        { label: t('footer', 'cols.c1_l6'), href: '/publisher-portal' },
+        { label: t('footer', 'cols.c1_l6'), href: PAGEMINT_APP_URL, external: true },
       ],
     },
     {

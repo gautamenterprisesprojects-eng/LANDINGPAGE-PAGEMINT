@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, LayoutDashboard, Layers, ShieldCheck } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { PAGEMINT_APP_URL } from '@/lib/links'
 
 export default function PortalSection() {
   const { t } = useLanguage()
@@ -51,7 +52,7 @@ export default function PortalSection() {
         </div>
 
         <div className="text-center">
-          <Link href="/publisher-portal" className="btn-primary inline-flex">
+          <Link href={PAGEMINT_APP_URL} className="btn-primary inline-flex">
             {t('portal', 'cta')}
             <ArrowRight size={16} />
           </Link>

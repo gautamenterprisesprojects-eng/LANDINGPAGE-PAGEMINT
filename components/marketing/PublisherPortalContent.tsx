@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { motion } from 'framer-motion'
+import { PAGEMINT_APP_URL } from '@/lib/links'
 
 export default function PublisherPortalContent() {
   const { t } = useLanguage()
@@ -31,8 +32,8 @@ export default function PublisherPortalContent() {
             <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
               {t('portal', 'tagline') || 'From content import to final publication approval — the PageMint Publisher Portal gives every member of your team the right tools, at the right level of access.'}
             </p>
-            <Link href="/request-demo" className="btn-primary inline-flex">
-              {t('nav', 'contact_us') || 'Request Demo'} <ArrowRight size={16} />
+            <Link href={PAGEMINT_APP_URL} className="btn-primary inline-flex">
+              {t('nav', 'publisher_portal') || 'Log in'} <ArrowRight size={16} />
             </Link>
           </motion.div>
         </div>
