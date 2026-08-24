@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import Navigation from '@/components/marketing/Navigation'
-import Footer from '@/components/marketing/Footer'
-import PublisherPortalContent from '@/components/marketing/PublisherPortalContent'
+import { redirect } from 'next/navigation'
+import { PAGEMINT_APP_URL } from '@/lib/links'
 
 export const metadata: Metadata = {
   title: 'Publisher Portal — Everything Your Publishing Team Needs, In One Place',
@@ -9,11 +8,5 @@ export const metadata: Metadata = {
 }
 
 export default function PublisherPortalPage() {
-  return (
-    <>
-      <Navigation />
-      <PublisherPortalContent />
-      <Footer />
-    </>
-  )
+  redirect(PAGEMINT_APP_URL)
 }
